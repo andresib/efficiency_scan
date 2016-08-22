@@ -1,6 +1,6 @@
 # efficiency_scan
 Code to make an efficiency scan adding voltages to the knee.
-IMPORTAN: This code need as an input the directory "results" that is produced after running the HV Scan Code.
+IMPORTANT: This code need as an input the directory "results" that is produced after running the HV Scan Code.
 
 To run the code you have to do the following steps.
 
