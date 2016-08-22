@@ -20,12 +20,15 @@ eficiencias_barrel0.txt:
 It will contain the following columns: roll name (following the order provided in the file data_filtered/barrel_filtered.txt) , knee efficiency, knee efficiency +20 Volts, knee efficiency +40 Volts, knee efficiency +60 Volts, knee efficiency +80 Volts, knee voltage, knee voltage+ 100 Volts.
 
 eficiencias_endcap0.txt:
+
 It will contain the same information that in the previous case, the difference is that the it will use the rolls provided in the file data_filtered/endcap_filtered.txt.
 
 eficiencias_re40.txt:
+
 It will contain the same information that in the previous case, the difference is that the it will use the rolls provided in the file data_filtered/re4_filtered.txt.
 
 eficiencias_barrel.txt, eficiencias_barrel2.txt, eficiencias_barrel3.txt, eficiencias_barrel4.txt, eficiencias_barrel5.txt:
+
 Those files will contain the same information as in "eficiencias_barrel0.txt" the difference is the following in the columns:
 eficiencias_barrel.txt: roll name, knee efficiency + 80, knee efficiency +100 Volts, knee efficiency +120 Volts, knee efficiency +140 Volts, knee efficiency +160 Volts, knee voltage, knee voltage+ 100 Volts.
 The other files will continue the increasing in the voltage adding 20 volts every time to the knee efficiency  until the file eficiencias_barrel5.txt, that will contain the following info in the columns:
@@ -35,12 +38,15 @@ The same conditions apply for the other files with eficiencias_endcap*.txt and e
 #####III. To run the code you have to run the provided files in the main directory, for example, to run the file "eficiencias_sinfit_general0.C" you have to do the following:
 
 root -l
+
 root [0] .x eficiencias_sinfit_general0.C
 
 That file will use the following inputs:
+
 data_filtered/re4_filtered.txt
 data_filtered/endcap_filtered.txt
 data_filtered/barrel_filtered.txt
+
 The folder "results" that is created after runnign the HV Scan code, that folder contain several folders, one per every roll. As an example the folder with the name "W+2_RB4_S09_Backward". That folder will contain the following files: 
 index.html
 runsData.txt
