@@ -100,7 +100,8 @@ knee0.png
 The same case will apply for all the other files: eficiencias/histos_eficiencias*.c
 
 #####V. Finally, using the mean of the  plots in the previous step, you can create a plot of Efficiency VS added voltage to the "knee".
-That plot will contain voltages from 0 until 560 Volts making steps of 20 volts.
+That plot will contain voltages from 0 until 560 Volts making steps of 20 volts. You can see an example of the kind of plot that you can create looking at the file eficiencias/efficiency_scan.png
+
 
 
 
