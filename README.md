@@ -16,6 +16,7 @@ re4_filtered.txt     -> The list of rolls in the RE4 that are going to be used f
 #####II. To create a directory called "eficiencias" (the directory is included by default) that will store the output of the code. As a result of running the code you will find the following files:
 
 eficiencias_barrel0.txt:
+
 It will contain the following columns: roll name (following the order provided in the file data_filtered/barrel_filtered.txt) , knee efficiency, knee efficiency +20 Volts, knee efficiency +40 Volts, knee efficiency +60 Volts, knee efficiency +80 Volts, knee voltage, knee voltage+ 100 Volts.
 
 eficiencias_endcap0.txt:
