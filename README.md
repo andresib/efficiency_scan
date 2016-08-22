@@ -31,8 +31,11 @@ eficiencias_barrel.txt, eficiencias_barrel2.txt, eficiencias_barrel3.txt, eficie
 
 Those files will contain the same information as in "eficiencias_barrel0.txt" the difference is the following in the columns:
 eficiencias_barrel.txt: roll name, knee efficiency + 80, knee efficiency +100 Volts, knee efficiency +120 Volts, knee efficiency +140 Volts, knee efficiency +160 Volts, knee voltage, knee voltage+ 100 Volts.
+
 The other files will continue the increasing in the voltage adding 20 volts every time to the knee efficiency  until the file eficiencias_barrel5.txt, that will contain the following info in the columns:
+
 roll name, knee efficiency + 480, knee efficiency +500 Volts, knee efficiency +520 Volts, knee efficiency +540 Volts, knee efficiency +560 Volts, knee voltage, knee voltage+ 100 Volts.
+
 The same conditions apply for the other files with eficiencias_endcap*.txt and eficiencias_re4*.txt but taking in account this time the rolls for the endcap (provided in the file data_filtered/endcap_filtered.txt) and the rolls for re4 (provided in the file data_filtered/re4_filtered.txt)
 
 #####III. To run the code you have to run the provided files in the main directory, for example, to run the file "eficiencias_sinfit_general0.C" you have to do the following:
@@ -44,37 +47,54 @@ root [0] .x eficiencias_sinfit_general0.C
 That file will use the following inputs:
 
 data_filtered/re4_filtered.txt
+
 data_filtered/endcap_filtered.txt
+
 data_filtered/barrel_filtered.txt
 
 The folder "results" that is created after runnign the HV Scan code, that folder contain several folders, one per every roll. As an example the folder with the name "W+2_RB4_S09_Backward". That folder will contain the following files: 
+
 index.html
+
 runsData.txt
+
 CLSvsHV.png
+
 EFFvsHV.png
+
 fitData.txt
+
 fitDataCLS.txt
 
 The file eficiencias_sinfit_general0.C will produce the following outputs:
 
 eficiencias/eficiencias_barrel0.txt
+
 eficiencias/eficiencias_endcap0.txt
+
 eficiencias/eficiencias_re40.txt
 
 The same case will apply for the other files eficiencias_sinfit_general*.C, but in this case it will be a change in the voltage added in the calculation of the efficiency (20 volts in every step) as it was explained in the step II.
 
 #####IV. The code also provide a file to create the plots for all the cases,  for example the file:
 eficiencias/histos_eficiencias0.c
+
 That file will produce the plots using the files 
 
 eficiencias/eficiencias_barrel0.txt
+
 eficiencias/eficiencias_endcap0.txt
+
 eficiencias/eficiencias_re40.txt
 
 The plots will be produced in the directory "histogramas_0" with the following names:
+
 effendcap0.png
+
 effRE40.png
+
 effbarrel0.png
+
 knee0.png
 
 The same case will apply for all the other files: eficiencias/histos_eficiencias*.c
